@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "721357080380",
+    "project_id": "music-app-59474",
+    "storage_bucket": "music-app-59474.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721357080380:android:b9bd4fe1aaf76d76b2c039",
+        "android_client_info": {
+          "package_name": "com.codepolitan.musicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721357080380-8ik8i564gjsc5fa6ugcru2vlavnau3sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnDS83OEZ7YyFa84LPmkxmOh7gt6BLyQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721357080380-8ik8i564gjsc5fa6ugcru2vlavnau3sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

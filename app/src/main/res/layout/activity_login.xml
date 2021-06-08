@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".views.login.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/image_view_bg_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_auth_top"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_view_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/image_view_bg_top"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_email"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:hintEnabled="false"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/text_view_login">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_edit_text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:hint="@string/email"
+                android:textColor="@color/black"
+                android:textColorHint="#4D000000"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_password"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:hintEnabled="false"
+            app:endIconMode="password_toggle"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/ti_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_edit_text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:hint="@string/password"
+                android:textColor="@color/black"
+                android:textColorHint="#4D000000"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/image_view_bg_bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_auth_bot"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/btn_forgot_password"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_marginTop="12dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@id/image_view_bg_bot"
+            app:layout_constraintTop_toBottomOf="@id/ti_password"
+            app:layout_constraintEnd_toEndOf="@id/ti_password"/>
+
+        <Button
+            android:id="@+id/btn_new_register"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/new_here_register"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="@id/image_view_bg_bot"
+            app:layout_constraintBottom_toBottomOf="@id/image_view_bg_bot"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_btn_auth"
+            app:layout_constraintBottom_toBottomOf="@id/image_view_bg_bot"
+            app:layout_constraintEnd_toEndOf="@id/image_view_bg_bot"/>
+
+        <ProgressBar
+            android:id="@+id/pb_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

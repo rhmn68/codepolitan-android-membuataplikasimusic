@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Music App</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="new_here_register">New Here? register</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_member_login">Already Member? Login</string>
+    <string name="top_charts">Top Charts</string>
+    <string name="my_tracks">My Tracks</string>
+    <string name="top_albums">Top Albums</string>
+    <string name="user">User</string>
+    <string name="default_text">-</string>
+    <string name="logout">Logout</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_language">Change Language</string>
+    <string name="edit_user">Edit User</string>
+    <string name="update">Update</string>
+    <string name="by">by</string>
+    <string name="time_start">0:00</string>
+    <string name="old_password">Old Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="please_field_your_email">Please Field Your Email</string>
+    <string name="please_use_valid_email">Please Use Valid Email</string>
+    <string name="please_field_your_password">Please Field Your Password</string>
+    <string name="error">Error</string>
+    <string name="please_field_your_full_name">Please Field Your Full Name</string>
+    <string name="please_field_your_confirm_password">Please Field Your Confirm Password</string>
+    <string name="your_password_didnt_match">Your Password Did\'nt Match</string>
+    <string name="success">Success</string>
+    <string name="your_account_has_been_created">Your Account Has Been Created</string>
+    <string name="link_for_reset_password_has_been_sent_to_your_email">Link for reset password has been sent to your email</string>
+    <string name="your_password_has_been_changed">Your Password Has Been Changed</string>
+</resources>
